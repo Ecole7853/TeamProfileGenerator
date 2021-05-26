@@ -2,8 +2,8 @@ let renderEmployeeSections = [];
 
 function generateManagerSection(manager){
     return `<div class=employee>
-    <p id=name><i class="fas fa-mug-hot">${manager.getName()}</p>
-    <a href="mailto:${manager.getEmail()} "id=email>${manager.getEmail()}"</a>
+    <p id=name><i class="fas fa-mug-hot"></i>${manager.getName()}</p>
+    <a href="mailto:${manager.getEmail()}" id="email">${manager.getEmail()}</a>
     <p id=id>${manager.getId()}</p>
     <p id=officeNumber>${manager.getOfficeNumber()}</p>
 </div>`
@@ -11,7 +11,7 @@ function generateManagerSection(manager){
 function generateInternSection(intern){
     return `<div class=employee>
     <p id=name><i class="fas fa-graduation-cap"></i>${intern.getName()}</p>
-    <a href="mailto:${intern.getEmail()}" id=email>${intern.getEmail()}"</a>
+    <a href="mailto:${intern.getEmail()}" id="email">${intern.getEmail()}</a>
     <p id=id>${intern.getId()}</p>
     <p id=school>${intern.getSchool()}</p>
 </div>`
@@ -19,13 +19,14 @@ function generateInternSection(intern){
 function generateEngineerSection(engineer){
     return `<div class=employee>
     <p id=name><i class="fas fa-glasses"></i>${engineer.getName()}</p>
-    <a href="mailto:${engineer.getEmail()} "id=email>${engineer.getEmail()}"</a>
+    <a href="mailto:${engineer.getEmail()}" id="email">${engineer.getEmail()}</a>
     <a href="github.com/"id=github>${engineer.getGithub()}"</a>
     <p id=github>${engineer.getGithub()}</p>
 </div>`
 }
 
 function generateHtml(employees){
+    renderEmployeeSection = [];
     console.log("in the generate html", renderEmployeeSections);
     for (var i = 0; i < employees.length; i++){
        if (employees[i].getRole() === "Manager"){
