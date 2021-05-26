@@ -26,6 +26,7 @@ function generateEngineerSection(engineer){
 }
 
 function generateHtml(employees){
+    console.log("in the generate html", renderEmployeeSections);
     for (var i = 0; i < employees.length; i++){
        if (employees[i].getRole() === "Manager"){
            renderEmployeeSections.push(generateManagerSection(employees[i]))

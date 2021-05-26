@@ -5,6 +5,7 @@ const Intern = require("./lib/Intern")
 const Engineer = require("./lib/Engineer")
 const fs = require("fs");
 const employees = []
+console.log(htmlContent)
 const start = () => {
   inquirer
     .prompt({
@@ -24,6 +25,7 @@ const start = () => {
       } 
       else 
       {
+        console.log(htmlContent(employees))
         fs.writeFile("index.html", htmlContent(employees), (err) =>
         err ? console.log(err) : console.log("Success"))
         return;
