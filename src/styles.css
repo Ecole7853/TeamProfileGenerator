@@ -1,0 +1,28 @@
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-top:10%;
+}
+.employee {
+    flex: 0 0 250px;
+    background-color:rgba(115, 115, 233, 0.904);
+    border: 5px solid black;
+    height: 200px;
+    margin: 10px;
+}
+h1 {
+    text-align: center;
+    height: 200px;
+    background-color: rgb(146, 58, 58);
+
+}
+#name {
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 31, 31);
+    width: -webkit-fill-available;
+}
+.fas {
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 31, 31);
+}
