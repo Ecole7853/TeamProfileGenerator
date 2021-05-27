@@ -2,26 +2,26 @@ let renderEmployeeSections = [];
 
 function generateManagerSection(manager){
     return `<div class=employee>
-    <p id=name><i class="fas fa-mug-hot"></i>${manager.getName()}</p>
-    <a href="mailto:${manager.getEmail()}" id="email">${manager.getEmail()}</a>
-    <p id=id>${manager.getId()}</p>
-    <p id=officeNumber>${manager.getOfficeNumber()}</p>
+    <h2 id=name>${manager.getName()}<i class="fas fa-mug-hot">Manager </i></h2>
+    <p id=id>ID: ${manager.getId()}</p>
+    <p>Email: <a href="mailto:${manager.getEmail()}" id="email">${manager.getEmail()}</a></p>
+    <p id=officeNumber>Office Number: ${manager.getOfficeNumber()}</p>
 </div>`
 }
 function generateInternSection(intern){
     return `<div class=employee>
-    <p id=name><i class="fas fa-graduation-cap"></i>${intern.getName()}</p>
-    <a href="mailto:${intern.getEmail()}" id="email">${intern.getEmail()}</a>
-    <p id=id>${intern.getId()}</p>
-    <p id=school>${intern.getSchool()}</p>
+    <h2 id=name>${intern.getName()}<i class="fas fa-graduation-cap">Intern </i></h2>
+    <p id=id>ID: ${intern.getId()}</p>
+    <p>Email: <a href="mailto:${intern.getEmail()}" id="email">${intern.getEmail()}</a></p>
+    <p id=school>School: ${intern.getSchool()}</p>
 </div>`
 }
 function generateEngineerSection(engineer){
     return `<div class=employee>
-    <p id=name><i class="fas fa-glasses"></i>${engineer.getName()}</p>
-    <a href="mailto:${engineer.getEmail()}" id="email">${engineer.getEmail()}</a>
-    <a href="github.com/"id=github>${engineer.getGithub()}"</a>
-    <p id=github>${engineer.getGithub()}</p>
+    <h2 id=name>${engineer.getName()}<i class="fas fa-glasses">Engineer </i></h2>
+    <p id=id>ID: ${engineer.getId()}</p>
+    <p>Email: <a href="mailto:${engineer.getEmail()}" id="email">${engineer.getEmail()}</a></p>
+    <p>Github: <a href="https://www.github.com/"id=github>${engineer.getGithub()}</a></p>
 </div>`
 }
 
@@ -53,7 +53,9 @@ function generateHtml(employees){
 </head>
 <body>
 <main>
-<h1>My team</h1>
+<div class=jumbo>
+    <span class=title>My team</span>
+</div>
 <div id=team>
 <div class=container>
 ${renderEmployeeSections.join("")}

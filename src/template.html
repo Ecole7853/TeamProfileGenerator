@@ -1,76 +1,57 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles.css">
     <script src="https://kit.fontawesome.com/34d35bc68f.js" crossorigin="anonymous"></script>
-    <title>My team</title>
+    <title>My Team</title>
 </head>
-
 <body>
-    <main>
-        <h1>My team</h1>
-        <div class=container>
-            <div class=employee>
-                <p id=name><i class="fas fa-mug-hot"></i>${engineer.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <a href="github.com/" id=github>${manager.getGithub()}"</a>
-                <p id=github>${engineer.getGithub()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${intern.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <p id=id>${intern.getId()}</p>
-                <p id=school>${intern.getSchool()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${intern.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <p id=id>${intern.getId()}</p>
-                <p id=school>${intern.getSchool()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${engineer.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <a href="github.com/" id=github>${manager.getGithub()}"</a>
-                <p id=github>${engineer.getGithub()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${intern.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <p id=id>${intern.getId()}</p>
-                <p id=school>${intern.getSchool()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${intern.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <p id=id>${intern.getId()}</p>
-                <p id=school>${intern.getSchool()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${engineer.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <a href="github.com/" id=github>${manager.getGithub()}"</a>
-                <p id=github>${engineer.getGithub()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${intern.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <p id=id>${intern.getId()}</p>
-                <p id=school>${intern.getSchool()}</p>
-            </div>
-            <div class=employee>
-                <p id=name>${intern.getName()}</p>
-                <a href="mailto:${manager.getEmail()}" id=email>${manager.getEmail()}"</a>
-                <p id=id>${intern.getId()}</p>
-                <p id=school>${intern.getSchool()}</p>
-            </div>
-        </div>
-        </div>
-    </main>
+<main>
+<h1>My team</h1>
+<div id=team>
+<div class=container>
+<div class=employee>
+    <h2 id=name>George<i class="fas fa-mug-hot">Manager </i></h2>
+    <p id=id>ID: 1</p>
+    <p>Email: <a href="mailto:email@email.com" id="email">email@email.com</a></p>
+    <p id=officeNumber>Office Number: 18830302988</p>
+</div>
+<div class=employee>
+    <h2 id=name>Timothy<i class="fas fa-glasses">Engineer </i></h2>
+    <p id=id>ID: 2</p>
+    <p>Email: <a href="mailto:Email@email.com" id="email">Email@email.com</a></p>
+    <p>Github: <a href="github.com/"id=github>EngiGuy</a></p> 
+</div>
+<div class=employee>
+    <h2 id=name>Euron<i class="fas fa-glasses">Engineer </i></h2>
+    <p id=id>ID: 3</p>
+    <p>Email: <a href="mailto:email@email.com" id="email">email@email.com</a></p>
+    <p>Github: <a href="github.com/"id=github>MechanicMan</a></p>
+</div>
+<div class=employee>
+    <h2 id=name>Arya<i class="fas fa-graduation-cap">Intern </i></h2>
+    <p id=id>ID: 4</p>
+    <p>Email: <a href="mailto:email@email.com" id="email">email@email.com</a></p>
+    <p id=school>School: Community College</p>
+</div>
+<div class=employee>
+    <h2 id=name>Yigor<i class="fas fa-graduation-cap">Intern </i></h2>
+    <p id=id>ID: 5</p>
+    <p>Email: <a href="mailto:email@email.com" id="email">email@email.com</a></p>
+    <p id=school>School: College of hardknocks</p>
+</div>
+<div class=employee>
+    <h2 id=name>Ion<i class="fas fa-graduation-cap">Intern </i></h2>
+    <p id=id>ID: 6</p>
+    <p>Email: <a href="mailto:email@email.com" id="email">email@email.com</a></p>
+    <p id=school>School: School of schooling</p>
+</div>
+</div>
+</div>
+</main>
 </body>
-
 </html>

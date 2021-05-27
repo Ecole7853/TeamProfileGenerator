@@ -25,7 +25,6 @@ const start = () => {
       } 
       else 
       {
-        console.log(htmlContent(employees))
         fs.writeFile("index.html", htmlContent(employees), (err) =>
         err ? console.log(err) : console.log("Success"))
         return;
